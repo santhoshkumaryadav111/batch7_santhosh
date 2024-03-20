@@ -225,12 +225,155 @@
 # This is a special method which has the ability to execute itself without
 # calling it manually through the process of instantiation
 
-class profile:
-    def __init__(self): # constructor method
-        print("hey")
+#class profile:
+ #   def __init__(self): # constructor method
+  #      print("hey")
 
-p = profile() #execution of constructor through this process
-p.__init__()
+#p = profile() #execution of constructor through this process
+#p.__init__()
+
+
+#! Multilevel inheritance
+# ? Eg:1
+#class voice:
+ #   def sound(self):
+  #      print("all the animals have their own voice
+#class dog(voice):
+ #   def dog_voice(self):
+  #      print("bark")
+#class cat(dog):
+ #   def cat_voice(self):
+  #      print("meow")
+#class parrot(cat)
+
+# ! multiple inheritance
+# ? It has multiple parent and 1 child
+
+#   def function(self):
+ #       print("used to Airplans")
+        
+#class while_petrol:
+ #   def function_o(self):
+  #      print("used for Bike, cars")
+
+#class premium_petrol:
+ #   def function_p(self):
+  #      print("sports cars, bikes")
+
+#class petrol(while_petrol, organic_petrol, premium_petrol):
+ #   def defanition(self):
+  #      print("petorl types")
+
+#p= petrol()
+#p.defanition()
+#p.function_o()
+'''
+# ! Eg:2
+class addition:
+    def add(self, a, b):
+        print(a+b)
+        
+class subtract:
+    def add(self, a, b):
+        print(a-b)
+        
+class multiply:
+    def mul(self, a, b):
+        print(a*b)
+        
+class division(addition, subtract, multiply):
+    def add(self, a, b):
+        print(a/b)
+
+calc = division()
+calc.add(3, 4)
+calc.mul(5, 2)
+
+'''
+# ! Heirarical inheritance
+#class catagory:
+ #   def cat_name(self, weight):
+  #      print(weight)
+
+
+   #  def display(self, colour, taste):
+    #     print(colour, taste)
+
+#class Tomato(catagory):
+ #   def tomato_specs(self):
+  #      color='black"
+   #     taste = "neutral taste"
+    #    self.display(colour, taste)
+
+#class carrot(catagory):
+ #   def carrot_specs(self):
+  #      color="green"
+   #     taste = "sweet"
+    #    self.display(colour, taste)
+
+
+#c = carrot()
+#c.carrot_specs()
+#c.weight("30gms")
+
+
+# ! Hybrid inheritance
+# ? The combination of above 4 inheritance is called Hybrid inheritance
+#class c2(c1):
+ #   def m2(self):
+  #      print("class2")
+#class c3(c2):
+ #   def m3(self):
+  #      print("class3")
+#class c4(c3):
+ #   def m4(self):
+  #      print("class4")
+#class c4:
+ #   def m4(self):
+  #      print("class4")
+#class c5:
+ #   def m5(self):
+  #      print("class5")
+#class c6(c5, c3):
+ #   def m6(self):
+  #      print("class 4")
+#obj = c6()
+#obj.m3()
+
+
+# ! -------> polymorphism
+# poly - many, morph --> form
+#A function which has the ability to perform more than 1 functionality
+#then it is considered to be as polymorphism
+
+# * polymorphism in builtin functions
+# len() --> which is used to find the length of list, tuple, dict etc..
+# index()
+# max()
+# min()
+# count()
+# pop()
+# and more...
+
+# * polymorphism in operators
+# +
+#print(8+8)
+#print("k"+'1')
+#print([1,2,3]+[5,6])
+
+# *
+print(6*7)
+l1 = {12,3,4,5,6}
+print(*l1)
+def f1(*args):
+l1 = [1,2,3,4]
+print(l1*10)
+
+
+  
+
+  
+
 
 
     
